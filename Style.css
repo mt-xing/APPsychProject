@@ -1,0 +1,199 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Nunito:700|Open+Sans);
+
+
+/*
+ * Basics
+ * ======
+ */
+
+
+.MainContainer{
+	width:80%;
+	padding-left:5px;
+	padding-top:10px;
+	margin-left:200px;
+	border-left:solid black;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*
+ * Navigation
+ * ==========
+ */
+.Global{
+	position:fixed;
+	left:13px;
+	top:22px;
+}
+
+nav details{
+	margin-top:25px;
+	padding: 10px 10px 10px 10px;
+	border-color:black;
+	border-radius:5px;
+	border-style:solid;	
+	width:154px;
+}
+
+nav h1{
+	font-size:150%;
+	display:inline-block;
+}
+
+nav details {
+  transition: height 0.3s ease-out;
+}
+nav details:not([open]) { height: 2em;}
+nav details[open] { height: 10em;}
+
+nav ul{
+	list-style-type:none;
+	margin-top:10px;
+	padding:0;
+}
+
+nav ul li{
+	display:block;
+}
+
+nav ul li a{
+	display:block;
+    text-decoration:none;
+    color:black;
+    border-top: 1px solid black;
+    padding: 5px 15px;
+    background:rgb(235, 235, 235);
+    margin-left: 1px;
+    white-space: nowrap;
+	transition:background .4s, color .4s;
+}
+
+nav ul li a:hover {
+    background:black;
+	color:white;
+}
+
+
+
+
+/*
+ * Headings
+ * ========
+ */
+
+h1{
+	font-family: 'Nunito', sans-serif;
+	font-size:600%;
+	margin:0;
+}
+
+h2, h3, h4, h5, h6{
+	font-family:"Ubuntu", sans-serif;
+}
+
+/*
+ * Table of Contents
+ * =================
+ */
+
+.MainContainer nav{
+	width:90%;
+}
+
+.MainContainer nav .BR a{
+	display:inline-block;
+	border-style:solid;
+	border-color:black;
+	border-radius:10px;
+	margin:0;
+	text-align:center;
+	background-color:white;
+	transition:all 0.5s ease;
+	height:100px;
+	position:relative;
+	overflow:hidden;
+}
+
+.MainContainer nav .BR div{
+	transition: all 0.5s ease;
+	position:absolute;
+	overflow:hidden;
+	padding:10px 10px 10px 10px;
+}
+.MainContainer nav .BR a:hover div{
+	background-color:black;
+	-webkit-transform:translateY(-100px);
+}
+
+.MainContainer nav .R1 a{
+	width:30%;
+	margin-bottom:3px;
+}
+.MainContainer nav .R2 a{
+	width:45.5%;
+}
+
+.MainContainer nav .R1 div{
+	width:93%;
+}
+.MainContainer nav .R2 div{
+	width:96%;
+}
+
+.MainContainer nav a{
+	color:black;
+	text-decoration:none;
+}
+
+.NavImg{
+	max-width:80%;
+	height:80px;
+}
+
+nav h3{
+	padding-top:8px;
+	padding-bottom:32px;
+}
+
+/*
+ * Misc.
+ * =====
+ */
+
+hr{
+	display:block;
+	border: 0;
+	height: 1px;
+	background-image:-webkit-linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,0)); 
+	background-image:-moz-linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,0)); 
+	background-image:-ms-linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,0)); 
+	background-image:linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,0)); 
+}
+
+.BackTop {
+	position:fixed;
+	bottom:0;
+	right:0;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    text-align:center;
+    text-decoration:none;
+    display:block;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.BackTop:hover{
+	background-color:black;
+	color:white;
+}
+
+.YouTube{
+	float:right;
+	height:315px;
+	width:560px;
+	display:block;
+}
