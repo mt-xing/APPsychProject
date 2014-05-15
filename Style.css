@@ -180,6 +180,38 @@ nav h3{
 }
 
 /*
+ * Footer
+ * ======
+ */
+
+footer{
+    text-align:center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-top:40px;
+    padding-top:10px;
+    border:solid;
+    border-radius:10px;
+    padding-bottom:30px;
+    margin-bottom:40px;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+summary h3{
+    display:inline-block;
+    margin:0;
+    padding:0;
+}
+
+footer hr{
+    background-image:-webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0)); 
+	background-image:-moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0)); 
+	background-image:-ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0)); 
+	background-image:linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0)); 
+}
+
+/*
  * Misc.
  * =====
  */
@@ -226,4 +258,23 @@ nav{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+sup{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+a{
+    color:blue;
+    text-decoration:none;
+    transition:all 0.5s ease;
+}
+a:hover{
+    text-decoration:underline;
+    color:black;
+}
+
+.Credits{
+    font-size:75%;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
