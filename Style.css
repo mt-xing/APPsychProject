@@ -248,6 +248,24 @@ hr{
     text-decoration:none;
 }
 
+.Sidebar{
+    bottom:calc(50vh - 50px);
+    height:80px;
+    position:fixed;
+	right:0;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 10px 10px 10px 10px;
+    text-align:center;
+    text-decoration:none;
+    display:block;
+    margin:0;
+}
+.SidRadio{
+    display:block;
+}
+
 .YouTube{
 	float:right;
 	height:315px;
