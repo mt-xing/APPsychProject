@@ -145,11 +145,16 @@ h2, h3, h4, h5, h6{
 .NavImg{
 	max-width:80%;
 	height:80px;
+    padding-bottom:10px;
 }
 
 nav h3{
 	padding-top:18px;
 	padding-bottom:32px;
+}
+
+#LongRow{
+    width:40%;
 }
 
 /*
