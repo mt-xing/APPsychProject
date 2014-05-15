@@ -284,10 +284,17 @@ a:hover{
 }
 
 .DownButton{
+    display:block;
     float: left;
     position: relative;
     top: -10px;
     padding-right: 3px;
-    max-height:30px;
+    height:30px;
+    width:30px;
     margin-top:10px;
+    background-image:url("Images/DownArrow.png");
+    background-repeat:no-repeat;
+}
+.DownButton:hover{
+    background-image:url("Images/InvertDownArrow.png");
 }
