@@ -113,7 +113,6 @@ h2, h3, h4, h5, h6{
 	display:inline-block;
 	border-style:solid;
 	border-color:black;
-    border-radius:10px;
 	margin:0;
 	text-align:center;
 	background-color:white;
@@ -124,6 +123,11 @@ h2, h3, h4, h5, h6{
     width:100%;
     color:black;
 	text-decoration:none;
+}
+
+.MainContainer nav .R1 a{
+    position:relative;
+    top:9px;
 }
 
 .MainContainer nav .BR div{
@@ -159,6 +163,20 @@ nav h3{
 
 #LongRow{
     width:40%;
+}
+
+#TL{
+    /*Adds the curves individually*/
+    border-top-left-radius:10px;
+}
+#TR{
+    border-top-right-radius:10px;
+}
+#BL{
+    border-bottom-left-radius:10px;
+}
+#BR{
+    border-bottom-right-radius:10px;
 }
 
 /*
