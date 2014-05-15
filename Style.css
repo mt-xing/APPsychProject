@@ -225,6 +225,7 @@ hr{
 	background-image:-moz-linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,0)); 
 	background-image:-ms-linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,0)); 
 	background-image:linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,0)); 
+    margin-top:30px;
 }
 
 .BackTop {
@@ -279,4 +280,13 @@ a:hover{
 .Credits{
     font-size:75%;
     font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.DownButton{
+    float: left;
+    position: relative;
+    top: -10px;
+    padding-right: 3px;
+    max-height:30px;
+    margin-top:10px;
 }
