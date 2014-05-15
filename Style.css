@@ -103,6 +103,12 @@ h2, h3, h4, h5, h6{
 	width:90%;
 }
 
+.MainContainer nav tr{
+    margin:0;
+    padding:0;
+    height:90px;
+}
+
 .MainContainer nav .BR a{
 	display:inline-block;
 	border-style:solid;
@@ -132,13 +138,11 @@ h2, h3, h4, h5, h6{
 	-webkit-transform:translateY(-100px);
 }
 
-.MainContainer nav .R1 td{
-	margin-bottom:3px;
-}
-
 
 .MainContainer nav table{
     width:100%;
+    border-collapse:collapse;
+    border-spacing: 0;
 }
 
 
