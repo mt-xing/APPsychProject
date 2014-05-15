@@ -243,6 +243,7 @@ hr{
 .BackTop:hover{
 	background-color:black;
 	color:white;
+    text-decoration:none;
 }
 
 .YouTube{
