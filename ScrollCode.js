@@ -82,5 +82,11 @@ function FixScroll(){
         document.getElementById("SB4").checked = true;
     } else if (checkvisible(document.getElementById("Sec5"))){
         document.getElementById("SB5").checked = true;
+    } else{
+        document.getElementById("SB1").checked = false;   
+        document.getElementById("SB2").checked = false;  
+        document.getElementById("SB3").checked = false;  
+        document.getElementById("SB4").checked = false;  
+        document.getElementById("SB5").checked = false;  
     }
 }
