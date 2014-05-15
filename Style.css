@@ -39,6 +39,10 @@ nav details{
 	width:154px;
 }
 
+nav details summary{
+    cursor:pointer;
+}
+
 nav h1{
 	font-size:150%;
 	display:inline-block;
@@ -200,9 +204,14 @@ footer{
     margin-right:auto;
 }
 
+footer h1{
+    font-size:150%;
+}
+
 summary h3{
     display:inline-block;
-    margin:0;
+    margin-bottom:5px;
+    
     padding:0;
 }
 
