@@ -1,4 +1,4 @@
-Xing's AP Psychology Final Project - Theories of Motivation
+Theories of Motivation - Xing's AP Psychology Final Project
 ==============
 
 About
