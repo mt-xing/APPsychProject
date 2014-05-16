@@ -15,7 +15,7 @@
 	</head>
 	<body id="Top">
         
-        <header>
+        <header class="TopHeader">
             <!--<form id="sites-searchbox-form" action="https://sites.google.com/site/hookappsychology4a/system/app/pages/search">
                 <input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site">
                 <input type="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0" style="-webkit-user-select: none;" value="Search This Site" />
@@ -35,7 +35,8 @@
 </script>
                 <gcse:search></gcse:search>
             </div>
-            <h1>Hook AP Psychology 4A & 4B</h1>
+            <a href="https://sites.google.com/site/hookappsychology4a/"><h1>Hook AP Psychology 4A</h1></a>
+            <!--Probably going to have to swap out link soon-->
         </header>
         
 		<nav class="Global">
@@ -52,7 +53,10 @@
 		</nav>
 		
 		<div class="MainContainer">
-			<h1>Theories of Motivation</h1>
+            <header>
+                <h1>Theories of Motivation</h1>
+                <p>By: <a id="SelfPromo" href="http://www.michaelxing.tk/">Michael Xing</a></p>
+            </header>
 			<hr />
 			
 			<iframe width="560" height="315" class="YouTube" src="https://www.youtube.com/embed/vo4pMVb0R6M?rel=0" frameborder="0" allowfullscreen>
@@ -303,11 +307,26 @@ Sed aliquam ligula tincidunt lectus porta adipiscing. Sed rutrum egestas consequ
         </footer>
         
         <div class="Sidebar">
-            <input id="SB1" onclick="smoothScroll.animateScroll( null, '#Instinct');" class="SidRadio" type="radio" name="SideBar" value="Instinct" />
-            <input id="SB2" onclick="smoothScroll.animateScroll( null, '#Drive');" class="SidRadio" type="radio" name="SideBar" value="Drive" />
-            <input id="SB3" onclick="smoothScroll.animateScroll( null, '#Incentive');" class="SidRadio" type="radio" name="SideBar" value="Incentive" />
-            <input id="SB4" onclick="smoothScroll.animateScroll( null, '#Arousal');" class="SidRadio" type="radio" name="SideBar" value="Arousal" />
-            <input id="SB5" onclick="smoothScroll.animateScroll( null, '#Maslow');" class="SidRadio" type="radio" name="SideBar" value="Maslow" />
+            <div class="SidHolder">
+                <input id="SB1" onclick="smoothScroll.animateScroll(null, '#Instinct');" class="SidRadio" type="radio" name="SideBar" value="Instinct" />
+                <div class="SidLabel">Instinct Theory</div>
+            </div>
+            <div class="SidHolder">
+                <input id="SB2" onclick="smoothScroll.animateScroll(null, '#Drive');" class="SidRadio" type="radio" name="SideBar" value="Drive" />
+                <div class="SidLabel">Drive-Reduction Theory</div>
+            </div>
+            <div class="SidHolder">
+                <input id="SB3" onclick="smoothScroll.animateScroll(null, '#Incentive');" class="SidRadio" type="radio" name="SideBar" value="Incentive" />
+                <div class="SidLabel">Incentive Theory</div>
+            </div>
+            <div class="SidHolder">
+                <input id="SB4" onclick="smoothScroll.animateScroll(null, '#Arousal');" class="SidRadio" type="radio" name="SideBar" value="Arousal" />
+                <div class="SidLabel">Optimal-Arousal Theory</div>
+            </div>
+            <div class="SidHolder">
+                <input id="SB5" onclick="smoothScroll.animateScroll(null, '#Maslow');" class="SidRadio" type="radio" name="SideBar" value="Maslow" />
+                <div class="SidLabel">Maslow's Pyramid</div>
+            </div>
         </div>
         
 		<a data-scroll href="#Top" class="BackTop">
@@ -321,7 +340,7 @@ Sed aliquam ligula tincidunt lectus porta adipiscing. Sed rutrum egestas consequ
 		speed: 1000, // Integer. How fast to complete the scroll in milliseconds
 		easing: 'easeInOutCubic', // Easing pattern to use
 		updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
-		offset:25, // Integer. How far to offset the scrolling anchor location in pixels
+		offset:110, // Integer. How far to offset the scrolling anchor location in pixels
 		/*callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
 		callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling*/
 	});

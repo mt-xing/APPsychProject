@@ -27,13 +27,13 @@ body{
 .Global{
 	position:fixed;
 	left:13px;
-	top:72px;
-    /*22 + 50 for title bar offset*/
+	top:96px;
+    /*46 + 50 for title bar offset*/
     background:white;
+    z-index:1;
 }
 
 nav details{
-	margin-top:25px;
 	padding: 10px 10px 10px 10px;
 	border-color:black;
 	border-radius:5px;
@@ -96,6 +96,20 @@ h1{
 	font-family: 'Nunito', sans-serif;
 	font-size:600%;
 	margin:0;
+}
+header p{
+    padding:0 0 0 10px;
+    margin:0;
+    font-weight:bold;
+    font-size:200%;
+    font-family:"Ubuntu", sans-serif;
+}
+#SelfPromo{
+    color:black;
+}
+#SelfPromo:hover{
+    text-decoration:none;
+    color:#00008B;
 }
 
 h2, h3, h4, h5, h6{
@@ -225,25 +239,33 @@ footer hr{
     margin-bottom:30px;
 }
 
+footer:hover{
+    z-index:2;
+}
+
 /*
  * Header
  * ======
  */
 
-header{
+.TopHeader{
     position:fixed;
     width:100%;
     background:rgb(235, 235, 235);
     top:0;
     left:0;
     margin:0;
-    padding:0;
+    padding:0 0 0 5px;
     z-index:1;
 }
 
-header h1{
+.TopHeader h1{
     font-size:200%;
     line-height:62px;
+}
+
+header a{
+    color:#BB242D;
 }
 
 .SearchBox{
@@ -254,6 +276,57 @@ header h1{
 .gsc-control-cse{
     background:rgb(235, 235, 235) !important;
     border:0 !important;
+}
+
+/*
+ * Sidebar
+ * =======
+ */
+
+.Sidebar{
+    bottom:calc(50vh - 50px);
+    height:80px;
+    position:fixed;
+	right:0;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 10px 10px 10px 10px;
+    text-align:center;
+    text-decoration:none;
+    display:block;
+    margin:0;
+}
+
+.SidRadio{
+    display:block;
+}
+
+.SidLabel{
+    position:absolute;
+    text-align:center;
+    top:-3px;
+    right:31px;
+    width:150px;
+    background-color:black;
+    color:white;
+    opacity:0;
+    transition: opacity 0.5s ease;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select:none;
+}
+
+.SidHolder:hover .SidLabel{
+    opacity:1;
+}
+
+.SidHolder{
+    position:relative;
 }
 
 /*
@@ -290,24 +363,6 @@ hr{
 	background-color:black;
 	color:white;
     text-decoration:none;
-}
-
-.Sidebar{
-    bottom:calc(50vh - 50px);
-    height:80px;
-    position:fixed;
-	right:0;
-    color: #000000;
-    background-color: rgba(235, 235, 235, 0.80);
-    font-size: 12px;
-    padding: 10px 10px 10px 10px;
-    text-align:center;
-    text-decoration:none;
-    display:block;
-    margin:0;
-}
-.SidRadio{
-    display:block;
 }
 
 .YouTube{
