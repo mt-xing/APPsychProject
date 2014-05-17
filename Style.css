@@ -476,3 +476,10 @@ a:hover{
 #DisqusSection{
     margin-bottom:10px;
 }
+
+#YouTubeVid{
+    border: 0;
+    margin: 0 0 5px 5px;
+    width:560px;
+    height:315px;
+}
