@@ -483,3 +483,11 @@ a:hover{
     width:560px;
     height:315px;
 }
+
+#LastList{
+    margin-bottom:10px;
+}
+
+.Gone{
+    display:none;
+}
