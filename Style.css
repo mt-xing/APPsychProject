@@ -41,10 +41,6 @@ nav details{
 	width:154px;
 }
 
-nav details summary{
-    cursor:pointer;
-}
-
 nav h1{
 	font-size:150%;
 	display:inline-block;
@@ -229,6 +225,14 @@ summary h3{
     display:inline-block;
     margin:0;
     padding:0;
+}
+
+summary{
+    cursor:pointer;
+    transition:background-color 0.25s ease;
+}
+footer summary:hover{
+    background-color:rgb(235, 235, 235);
 }
 
 footer hr{
