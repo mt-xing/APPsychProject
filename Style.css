@@ -385,6 +385,10 @@ input[type="radio"]:checked + label {
     background:url(Images/radiobutton-checked-sm-th.png) no-repeat;
 }
 
+input[type="radio"]:checked:hover + label {
+    background-color:black;
+}
+
 
 
 /*
