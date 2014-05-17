@@ -1,6 +1,6 @@
 <header>
   <h1>Theories of Motivation</h1>
-  <p>Xing's AP Psychology Final Project</p>
+  <p><a href="http://mt-xing.github.io/APPsychProject/">Xing's AP Psychology Final Project</a></p>
 </header> <hr />
 
 About
