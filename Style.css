@@ -279,11 +279,16 @@ footer:hover{
 
 header a{
     color:black;
+    position:relative;
+    top:0;
 }
 .TopHeader a:hover{
     /*3D Text Shadows from: http://www.3dcsstext.com/*/
-    text-shadow:0px 0px 0 rgb(231,231,231),0px 1px 0 rgb(216,216,216),0px 2px 0 rgb(202,202,202),0px 3px 0 rgb(187,187,187),0px 4px 0 rgb(173,173,173),0px 5px 0 rgb(158,158,158), 0px 6px 0 rgb(144,144,144),0px 7px 6px rgba(0,0,0,0.6),0px 7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
+    /*text-shadow:0px 0px 0 rgb(231,231,231),0px 1px 0 rgb(216,216,216),0px 2px 0 rgb(202,202,202),0px 3px 0 rgb(187,187,187),0px 4px 0 rgb(173,173,173),0px 5px 0 rgb(158,158,158), 0px 6px 0 rgb(144,144,144),0px 7px 6px rgba(0,0,0,0.6),0px 7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);*/
+    text-shadow:0px 0px 0 rgb(229,229,229),-1px 1px 0 rgb(212,212,212),-2px 2px 0 rgb(196,196,196),-3px 3px 0 rgb(179,179,179), -4px 4px 0 rgb(163,163,163),-5px 5px 4px rgba(0,0,0,0.6),-5px 5px 1px rgba(0,0,0,0.5),0px 0px 4px rgba(0,0,0,.2);
     text-decoration:none;
+    padding-left:7px;
+    top:-5px;
 }
 header a:hover #HidTitle{
     opacity:1;
