@@ -326,7 +326,7 @@ header a:hover #HidTitle{
 .SidLabel{
     position:absolute;
     text-align:center;
-    top:4px;
+    top:0px;
     right:0;
     width:0px;
     background-color:black;
@@ -337,6 +337,7 @@ header a:hover #HidTitle{
     transition: opacity 0.5s ease, width 0.35s ease;
     overflow:hidden;
     white-space:nowrap;
+    line-height:24px;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -348,9 +349,9 @@ header a:hover #HidTitle{
 
 .SidHolder:hover .SidLabel{
     opacity:1;
-    height:17px;
+    height:24px;
     width:150px;
-    right:34px;
+    right:24px;
     /*31px*/
     font-size:100%;
 }
