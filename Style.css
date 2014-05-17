@@ -305,8 +305,8 @@ header a:hover #HidTitle{
  */
 
 .Sidebar{
-    bottom:calc(50vh - 50px);
-    height:80px;
+    bottom:calc(50vh - 70px);
+    height:120px;
     position:fixed;
 	right:0;
     color: #000000;
@@ -326,7 +326,7 @@ header a:hover #HidTitle{
 .SidLabel{
     position:absolute;
     text-align:center;
-    top:-3px;
+    top:4px;
     right:0;
     width:0px;
     background-color:black;
@@ -350,13 +350,41 @@ header a:hover #HidTitle{
     opacity:1;
     height:17px;
     width:150px;
-    right:31px;
+    right:34px;
+    /*31px*/
     font-size:100%;
 }
 
 .SidHolder{
     position:relative;
 }
+    /*Radio Button Formatting*/
+
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label {
+    display:inline-block;
+    width:24px;
+    height:24px;
+    background:url(Images/radiobutton-unchecked-sm-th.png) no-repeat;
+    margin:0;
+    padding:0;
+    vertical-align:middle;
+    cursor:pointer;
+    transition: background 0.35s ease;
+}
+
+input[type="radio"]:hover + label {
+    background-color:black;
+}
+
+input[type="radio"]:checked + label {
+    background:url(Images/radiobutton-checked-sm-th.png) no-repeat;
+}
+
+
 
 /*
  * Misc.

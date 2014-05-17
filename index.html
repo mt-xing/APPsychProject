@@ -288,6 +288,7 @@ Sed aliquam ligula tincidunt lectus porta adipiscing. Sed rutrum egestas consequ
                     <li>Needs Bars (Sims 3) - <a href="http://www.crazytownblog.com/.a/6a012876c6c7fb970c01630358dd4c970d-800wi">http://www.crazytownblog.com/.a/6a012876c6c7fb970c01630358dd4c970d-800wi</a></li>
                     <li>Optimal Arousal Chart - <a href="http://goodpsychology.files.wordpress.com/2013/04/yerkes-dodson-law.gif">http://goodpsychology.files.wordpress.com/2013/04/yerkes-dodson-law.gif</a></li>
                     <li>Maslow's Pyramid - <a href="http://www.yourfamilyguru.com/MaslowsPyramid.png">http://www.yourfamilyguru.com/MaslowsPyramid.png</a></li>
+                    <li>Radio Button - <a href="http://www.clker.com/clipart-radiobutton-checked-sm.html">http://www.clker.com/clipart-radiobutton-checked-sm.html</a></li>
                 </ul>
             </section>
         
@@ -352,27 +353,32 @@ Sed aliquam ligula tincidunt lectus porta adipiscing. Sed rutrum egestas consequ
         <div class="Sidebar">
             <div class="SidHolder">
                 <input id="SB1" onclick="smoothScroll.animateScroll(null, '#Instinct');" class="SidRadio" type="radio" name="SideBar" value="Instinct" />
+                <label for="SB1"></label>
                 <div class="SidLabel">Instinct Theory</div>
             </div>
             <div class="SidHolder">
                 <input id="SB2" onclick="smoothScroll.animateScroll(null, '#Drive');" class="SidRadio" type="radio" name="SideBar" value="Drive" />
+                <label for="SB2"></label>
                 <div class="SidLabel">Drive-Reduction Theory</div>
             </div>
             <div class="SidHolder">
                 <input id="SB3" onclick="smoothScroll.animateScroll(null, '#Incentive');" class="SidRadio" type="radio" name="SideBar" value="Incentive" />
+                <label for="SB3"></label>
                 <div class="SidLabel">Incentive Theory</div>
             </div>
             <div class="SidHolder">
                 <input id="SB4" onclick="smoothScroll.animateScroll(null, '#Arousal');" class="SidRadio" type="radio" name="SideBar" value="Arousal" />
+                <label for="SB4"></label>
                 <div class="SidLabel">Optimal-Arousal Theory</div>
             </div>
             <div class="SidHolder">
                 <input id="SB5" onclick="smoothScroll.animateScroll(null, '#Maslow');" class="SidRadio" type="radio" name="SideBar" value="Maslow" />
+                <label for="SB5"></label>
                 <div class="SidLabel">Maslow's Pyramid</div>
             </div>
         </div>
         
-		<a data-scroll href="#Top" class="BackTop">
+        <a data-scroll href="#Top" class="BackTop">
 			&#9650;<br />Back<br />to<br />Top
         </a>
 		
@@ -387,7 +393,7 @@ Sed aliquam ligula tincidunt lectus porta adipiscing. Sed rutrum egestas consequ
 		/*callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
 		callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling*/
 	});
-        var TheTimer = window.setInterval(function(){FixScroll()}, 1000);
+        var TheTimer = window.setInterval(function(){FixScroll()}, 500);
 	</script>
 	
 </html>
