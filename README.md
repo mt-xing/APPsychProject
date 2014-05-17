@@ -5,7 +5,7 @@
 
 About
 -----
-This is my final project for AP Psychology (obviously). I we were originally making a class wiki - I decided to be a "rebel" and write my own page from scrap. As my website (http://www.michaelxing.tk/) was blocked by my school, I hosted my site on GitHub. I'm broke, so I'm paying for the full package, which is why this is public. It was originally intended only for my class, though if you found it and decided there was some value to it, you're free to reuse it.
+This is my final project for AP Psychology (obviously). We were originally told to make a class wiki, but I decided to be a "rebel" and write my own page from scrap. As my website (http://www.michaelxing.tk/) was blocked by my school, I hosted my site on GitHub. I'm broke, so I'm paying for the full package, which is why this is public. It was originally intended only for my class, though if you found it and decided there was some value to it, you're free to reuse it.
 
 <hr />
 
