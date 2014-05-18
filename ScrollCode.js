@@ -90,3 +90,14 @@ function FixScroll(){
         document.getElementById("SB5").checked = false;  
     }
 }
+
+
+
+
+
+//Feature Detection, Stolen From: http://demosthenes.info/blog/680/Feature-Detection-and-Styling-For-The-HTML5-details-Element
+function supports_details() {
+    if (!('open' in document.createElement('details'))) {
+        return false;
+    }
+}
