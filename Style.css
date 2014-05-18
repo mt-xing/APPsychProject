@@ -423,7 +423,7 @@ input[type="radio"]:checked:hover + label {
     margin: 0 auto 0 auto;
     background:black;
     color:red;
-    top:100px;
+    top:10px;
     top:calc(50vh - 250px);
     height:500px;
     position:relative;
