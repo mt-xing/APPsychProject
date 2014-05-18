@@ -38,6 +38,34 @@
             <a href="https://sites.google.com/site/limbicsystembytaylorgallman/"><h1>Hook AP Psychology 4A</h1><span id="HidTitle">&#8592; Back to Home</span></a>
         </header>
         
+        
+        <div class="FDBox Gone" id="BadBrowser">
+            <div class="FDMsg">
+                <h1>Heads Up!</h1>
+                <h2>Your Browser Sucks</h2>
+                
+                <p>This site makes extensive use of new features in HTML 5 ande CSS 3. Features that, evidently, your browser doesn't support.</p>
+                
+                <p>
+                    Currently, this site only fully supports the latest versions of:<br />
+                    <a href="https://www.google.com/chrome/browser/"><img title="Google Chrome" src="http://creditworksusa.com/wp-content/uploads/2014/04/google-chrome-logo-transparent-background.png" alt="Google Chrome" class="FDImg" /></a>
+                    <a href="http://www.opera.com/"><img title="Opera" src="http://d2jc9zwbrclgz3.cloudfront.net/static-heap/e4/e43e58ca1fad19da45c2d944f27858450d6a7015/opera-desktop-icon.png" alt="Opera" class="FDImg" /></a>
+                </p>
+                
+                <p>
+                    This site partially supports the latest versions of:<br />
+                    <img title="Mozilla Firefox" src="https://www.myhemera.com/myhemera/Logo/Firefox_logo.png" alt="Mozilla Firefox" class="FDImg" />
+                    <img title="Internet Explorer" src="http://www.cssreflex.com/wp-content/uploads/2013/11/ie9-10_512x512.png" alt="Internet Explorer" class="FDImg" />
+                </p>
+                
+                <p>This site does not support:<br />
+                    <img title="Safari" src="http://blog.wikispaces.com/wp-content/uploads/2008/12/safari-logo.png" alt="Safari" class="FDImg" /> <span id="TrollMac">(at least, not on PC)</span>
+                </p>
+            </div>
+        </div>
+        
+        
+        
 		<nav class="Global">
 			<details>
 				<summary>
@@ -422,7 +450,7 @@ Sed aliquam ligula tincidunt lectus porta adipiscing. Sed rutrum egestas consequ
             
             
             if(supports_details() == false){
-                alert("Your Browser Sucks!");
+                document.getElementById("BadBrowser").style.display = "block";
             }
 		</script>
         

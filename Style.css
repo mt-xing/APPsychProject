@@ -18,15 +18,18 @@
 
 body{
 	font-family: 'Open Sans', sans-serif;
+    padding:0;
+    margin:0;
 }
 
 /*
  * Navigation
  * ==========
  */
+
 .Global{
 	position:fixed;
-	left:13px;
+	left:10px;
 	top:96px;
     /*46 + 50 for title bar offset*/
     background:white;
@@ -399,7 +402,47 @@ input[type="radio"]:checked:hover + label {
     background-color:black;
 }
 
+/*
+ * Feature Detection
+ * =================
+ */
 
+
+.FDBox{
+    width:100%;
+    height:100%;
+    position:fixed;
+    background:rgba(0, 0, 0, 0.75);
+    z-index:10;
+    margin:0;
+    text-align:center;
+}
+
+.FDMsg{
+    width:75%;
+    margin: 0 auto 0 auto;
+    background:black;
+    color:red;
+    top:calc(50vh - 250px);
+    height:500px;
+    position:relative;
+    overflow-y:scroll;
+}
+
+.FDImg{
+    max-width:50px;
+    padding:10px;
+}
+
+.FDBox h2{
+    font-size:300%;
+}
+
+#TrollMac{
+    position:relative;
+    bottom:25px;
+    font-size:75%;
+}
 
 /*
  * Misc.
