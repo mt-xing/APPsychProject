@@ -157,6 +157,8 @@ h2, h3, h4, h5, h6{
 }
 .MainContainer nav .BR a:hover div{
 	background-color:black;
+    transform:translateY(-100px);
+    -ms-transform:translateY(-100px);
 	-webkit-transform:translateY(-100px);
 }
 
