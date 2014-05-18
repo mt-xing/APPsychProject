@@ -444,6 +444,12 @@ input[type="radio"]:checked:hover + label {
     font-size:75%;
 }
 
+.FDButton{
+    height:50px;
+    padding:10px;
+    margin:10px;
+}
+
 /*
  * Misc.
  * =====
