@@ -226,6 +226,12 @@ footer h1{
     margin-bottom:10px;
 }
 
+footer h2{
+    margin:0;
+    padding:10px 0 0 0;
+    font-size:150%;
+}
+
 summary h3{
     display:inline-block;
     margin:0;
