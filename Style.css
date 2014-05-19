@@ -500,7 +500,6 @@ hr{
 }
 
 .YouTube{
-	float:right;
 	height:315px;
 	width:560px;
 	display:block;
@@ -559,6 +558,16 @@ a:hover{
     margin: 0 0 5px 5px;
     width:560px;
     height:315px;
+}
+
+.RightBox{
+    float:right;
+}
+
+.Caption{
+    text-align:center;
+    font-style:italic;
+    font-size:75%;
 }
 
 #LastList{
