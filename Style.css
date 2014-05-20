@@ -539,6 +539,10 @@ a:hover{
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
+li{
+    transition: all 0.5s ease;
+}
+
 .DownButton{
     display:block;
     float: left;
@@ -582,4 +586,11 @@ a:hover{
 
 .Gone{
     display:none;
+}
+
+#FrogPic{
+    max-height:200px;
+}
+#RunningPic{
+    max-height:100px;
 }
