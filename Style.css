@@ -591,8 +591,9 @@ li{
     display:none;
 }
 
-#FrogPic{
+.Pic200{
     max-height:200px;
+    max-width:200px;
 }
 #RunningPic{
     max-height:100px;
