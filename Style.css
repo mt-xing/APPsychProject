@@ -568,11 +568,13 @@ li{
 
 .YouTubeVid{
     border: 0;
-    margin: 0 0 5px 5px;
     width:560px;
     height:315px;
 }
 
+.LeftBox{
+    float:left;
+}
 .RightBox{
     float:right;
 }
@@ -581,6 +583,7 @@ li{
     text-align:center;
     font-style:italic;
     font-size:75%;
+    padding:5px;
 }
 
 #LastList{
@@ -595,6 +598,18 @@ li{
     max-height:200px;
     max-width:200px;
 }
+.Pic300{
+    max-height:300px;
+    max-width:300px;
+}
 #RunningPic{
     max-height:100px;
+}
+
+.Compare, .Compare th, .Compare td{
+    border-style:solid;
+    border-color:black;
+    border-collapse:collapse;
+    border-width:3px;
+    margin:5px;
 }
