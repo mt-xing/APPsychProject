@@ -8,10 +8,9 @@
 
 
 .MainContainer{
-	width:80%;
 	padding-left:5px;
 	padding-top:60px;
-    /*Offset for title bar (10 + 50) */
+	/*Offset for title bar (10 + 50) */
 	margin-left:200px;
 	border-left:solid black;
 }
