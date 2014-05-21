@@ -34,6 +34,7 @@ body{
     /*46 + 50 for title bar offset*/
     background:white;
     z-index:1;
+    width:180px;
 }
 
 nav details{
