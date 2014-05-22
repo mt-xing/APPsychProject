@@ -620,6 +620,7 @@ li{
 .Compare{
     margin:0 10px 0 0;
     text-align:center;
+    border-collapse:collapse;
 }
 .Compare td{
     background-color:rgb(235, 235, 235);
@@ -629,6 +630,9 @@ li{
     padding:10px;
     background-color:black;
     color:white;
+}
+.Compare .RRow{
+    border-left:solid 1px black;
 }
 
 #MainTitle{
