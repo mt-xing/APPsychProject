@@ -140,6 +140,8 @@ function Startup(){
 
 
 function DetermineCookie(){
+    var CookieValue = readCookie("XingVisit");
+    
     if(CookieValue == 1){
         RemoveFrog();
     }
