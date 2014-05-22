@@ -106,6 +106,39 @@ function supports_details() {
 }
 
 
+
+function Startup(){
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+    
+    smoothScroll.init({
+        speed: 1000, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+        offset:110, // Integer. How far to offset the scrolling anchor location in pixels
+        /*callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
+        callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling*/
+    });
+    var TheTimer = window.setInterval(function(){FixScroll()}, 500);
+    
+    document.getElementsByTagName("body")[0].style.height = "100%";
+    document.getElementsByTagName("body")[0].style.overflow = "hidden";
+    
+    if(supports_details() == false){
+        document.getElementById("BadBrowser").style.display = "block";
+    } else{
+        setTimeout(function(){FadeIn()}, 1000);
+    }
+    
+    
+    var CookieValue = readCookie("XingVisit");
+	if(CookieValue == 1){
+		RemoveFrog();
+	}
+}
+
+
+
+
 function FadeIn(){
     var Title = document.getElementById("MainTitle");
     Title.style.fontSize = "600%";
@@ -126,4 +159,38 @@ function FadeIn2(){
 function FadeIn3(){
     document.getElementsByTagName("body")[0].style.height = "initial";
     document.getElementsByTagName("body")[0].style.overflow = "initial";
+}
+
+function RemoveFrog(){
+    
+    if(document.getElementById("FrogNoShow").checked == true){
+        createCookie("XingVisit", 1, 30);
+    }
+    
+    document.getElementById("FrogWarn").style.display = "none";
+}
+
+
+
+
+
+//Cookie Setting Cr@p - Thanks to http://www.quirksmode.org/js/cookies.html
+function createCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
 }

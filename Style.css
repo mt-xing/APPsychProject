@@ -441,7 +441,7 @@ input[type="radio"]:checked:hover + label {
     top:calc(50vh - 250px);
     height:500px;
     position:relative;
-    overflow-y:scroll;
+    overflow-y:auto;
 }
 
 .FDImg{
