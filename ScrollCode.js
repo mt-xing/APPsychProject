@@ -117,7 +117,7 @@ function supports_details() {
 function Startup(){
     var CookieValue = readCookie("XingVisit");
     
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
+    
     
     smoothScroll.init({
         speed: 1000, // Integer. How fast to complete the scroll in milliseconds
@@ -159,6 +159,8 @@ function DetermineCookie(){
         
         RemoveFrog();
         
+    } else{
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
     }
 }
 
