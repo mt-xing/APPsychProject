@@ -116,7 +116,6 @@ function Startup(){
     var CookieValue = readCookie("XingVisit");
     
     document.body.scrollTop = document.documentElement.scrollTop = 0;
-    document.getElementById("Cover").style.display = "initial";
     
     smoothScroll.init({
         speed: 1000, // Integer. How fast to complete the scroll in milliseconds
@@ -143,6 +142,7 @@ function DetermineCookie(){
     var CookieValue = readCookie("XingVisit");
     
     if(CookieValue == 1){
+        document.getElementById("Cover").style.transition = "initial";
         RemoveFrog();
     }
 }
