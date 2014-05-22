@@ -95,7 +95,7 @@ function FixScroll(){
 
 function ShowLink(CredName){
     document.getElementById(CredName).style.background = "yellow";
-    setTimeout(function(){document.getElementById(CredName).style.background = null}, 3*TimeMult);
+    setTimeout(function(){document.getElementById(CredName).style.background = null}, 3000);
 }
 
 
