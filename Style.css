@@ -196,17 +196,17 @@ nav h3{
     width:40%;
 }
 
-#TL{
+.TL{
     /*Adds the curves individually*/
     border-top-left-radius:10px;
 }
-#TR{
+.TR{
     border-top-right-radius:10px;
 }
-#BL{
+.BL{
     border-bottom-left-radius:10px;
 }
-#BR{
+.BR{
     border-bottom-right-radius:10px;
 }
 
@@ -617,12 +617,18 @@ li{
     max-height:100px;
 }
 
-.Compare, .Compare th, .Compare td{
-    border-style:solid;
-    border-color:black;
-    border-collapse:collapse;
-    border-width:3px;
-    margin:5px;
+.Compare{
+    margin:0 10px 0 0;
+    text-align:center;
+}
+.Compare td{
+    background-color:rgb(235, 235, 235);
+    padding:10px;
+}
+.Compare th{
+    padding:10px;
+    background-color:black;
+    color:white;
 }
 
 #MainTitle{
@@ -630,3 +636,4 @@ li{
     opacity:1;
     font-size:1000%;
 }
+
