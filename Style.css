@@ -21,6 +21,11 @@ body{
     margin:0;
 }
 
+p{
+    opacity:0;
+    transition: opacity 2s ease;
+}
+
 /*
  * Navigation
  * ==========
@@ -471,6 +476,10 @@ input[type="radio"]:checked:hover + label {
     cursor:pointer;
 }
 
+.FDBox p{
+    opacity:1;
+}
+
 /*
  * Misc.
  * =====
@@ -570,6 +579,8 @@ li{
     border: 0;
     width:560px;
     height:315px;
+    opacity:0;
+    transition: opacity 1s ease;
 }
 
 .LeftBox{
@@ -612,4 +623,10 @@ li{
     border-collapse:collapse;
     border-width:3px;
     margin:5px;
+}
+
+#MainTitle{
+    transition: font-size 2s ease;
+    opacity:1;
+    font-size:1000%;
 }

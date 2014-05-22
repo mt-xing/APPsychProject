@@ -104,3 +104,20 @@ function supports_details() {
         return false;
     }
 }
+
+
+function FadeIn(){
+    var Title = document.getElementById("MainTitle");
+    Title.style.fontSize = "600%";
+    setTimeout(function(){FadeIn2()}, 1000);
+}
+function FadeIn2(){
+    var Paras = document.getElementsByTagName("p");
+    for(i = 0; i < Paras.length; i++){
+        Paras[i].style.opacity = 1;
+    }
+    var Vids = document.getElementsByClassName("YouTubeVid");
+    for(i = 0; i < Vids.length; i++){
+        Vids[0].style.opacity = 1;
+    }
+}

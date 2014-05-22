@@ -36,7 +36,7 @@
         
         
         <div class="FDBox Gone" id="BadBrowser">    
-            <img onclick="document.getElementById('BadBrowser').style.display = 'none';" alt="Close" src="Images/exit-closed-symbol-hi.png" class="CloseButton" />
+            <img onclick="document.getElementById('BadBrowser').style.display = 'none';FadeIn();" alt="Close" src="Images/exit-closed-symbol-hi.png" class="CloseButton" />
             
             <div class="FDMsg">
                 
@@ -61,7 +61,7 @@
                     <img title="Safari" src="Images/safari-logo.png" alt="Safari" class="FDImg" /> <span id="TrollMac">(at least, not on PC)</span>
                 </p>
                 <br />
-                <input class="FDButton" type="button" value="Proceed At Your Own Risk" onclick="document.getElementById('BadBrowser').style.display = 'none';" />
+                <input class="FDButton" type="button" value="Proceed At Your Own Risk" onclick="document.getElementById('BadBrowser').style.display = 'none';FadeIn();" />
             </div>
         </div>
         
@@ -122,7 +122,7 @@
 		
 		<div class="MainContainer">
             <header>
-                <h1>Theories of Motivation</h1>
+                <h1 id="MainTitle">Theories of Motivation</h1>
                 <p>By: <a id="SelfPromo" href="http://www.michaelxing.tk/">Michael Xing</a></p>
             </header>
 			<hr />
@@ -552,6 +552,8 @@ Sed aliquam ligula tincidunt lectus porta adipiscing. Sed rutrum egestas consequ
                 document.getElementById("BadBrowser").style.display = "block";
                   
 
+            } else{
+                setTimeout(function(){FadeIn()}, 1000);
             }
 		</script>
         
