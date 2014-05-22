@@ -143,7 +143,18 @@ function DetermineCookie(){
     
     if(CookieValue == 1){
         document.getElementById("Cover").style.transition = "initial";
+        document.getElementById("MainTitle").style.transition = "initial";
+        var Paras = document.getElementsByTagName("p");
+        for(i = 0; i < Paras.length; i++){
+            Paras[i].style.transition = "initial";
+        }
+        var Vids = document.getElementsByClassName("YouTubeVid");
+        for(i = 0; i < Vids.length; i++){
+            Vids[i].style.transition = "initial";
+        }
+        
         RemoveFrog();
+        
     }
 }
 
@@ -165,7 +176,7 @@ function FadeIn2(){
     }
     var Vids = document.getElementsByClassName("YouTubeVid");
     for(i = 0; i < Vids.length; i++){
-        Vids[0].style.opacity = 1;
+        Vids[i].style.opacity = 1;
     }
     
     setTimeout(function(){FadeIn3()}, 1000);
