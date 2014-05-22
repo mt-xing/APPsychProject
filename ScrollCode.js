@@ -120,4 +120,10 @@ function FadeIn2(){
     for(i = 0; i < Vids.length; i++){
         Vids[0].style.opacity = 1;
     }
+    
+    setTimeout(function(){FadeIn3()}, 1000);
+}
+function FadeIn3(){
+    document.getElementsByTagName("body")[0].style.height = "initial";
+    document.getElementsByTagName("body")[0].style.overflow = "initial";
 }

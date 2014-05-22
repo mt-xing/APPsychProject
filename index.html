@@ -546,7 +546,8 @@ Sed aliquam ligula tincidunt lectus porta adipiscing. Sed rutrum egestas consequ
             });
             var TheTimer = window.setInterval(function(){FixScroll()}, 500);
             
-            
+            document.getElementsByTagName("body")[0].style.height = "100%";
+            document.getElementsByTagName("body")[0].style.overflow = "hidden";
             
             if(supports_details() == false){
                 document.getElementById("BadBrowser").style.display = "block";
