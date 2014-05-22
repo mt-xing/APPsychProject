@@ -430,13 +430,13 @@ input[type="radio"]:checked:hover + label {
     z-index:10;
     margin:0;
     text-align:center;
+    color:red;
 }
 
 .FDMsg{
     width:75%;
     margin: 0 auto 0 auto;
     background:black;
-    color:red;
     top:10px;
     top:calc(50vh - 250px);
     height:500px;
@@ -478,6 +478,13 @@ input[type="radio"]:checked:hover + label {
 
 .FDBox p{
     opacity:1;
+}
+
+
+
+
+#FrogWarn{
+    color:white;
 }
 
 /*
@@ -641,3 +648,12 @@ li{
     font-size:1000%;
 }
 
+#Cover{
+    transition:opacity 1.5s ease-in;
+    height:100%;
+    width:100%;
+    position:fixed;
+    z-index:8;
+    background:white;
+    opacity:1;
+}

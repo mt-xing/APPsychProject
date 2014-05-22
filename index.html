@@ -37,21 +37,23 @@
         <div class="FDBox" id="FrogWarn">
             <img onclick="RemoveFrog();" alt="Close" src="Images/exit-closed-symbol-hi.png" class="CloseButton" />
             <div class="FDMsg">
+                <br />
                 <h1>Warning</h1>
                 <p>This website contains pictures of frogs.</p>
                 <p>Viewer discretion is advised.</p>
                 <br />
                 <p>You've been warned.</p>
                 <br />
-                <input type="checkbox" id="FrogNoShow">
-                <label for="FrogNoShow">Do Not Show This Again - By Clicking This, You Consent To My Use Of Cookies</label>
                 <br />
+                <input type="checkbox" id="FrogNoShow" checked>
+                <label for="FrogNoShow">Do Not Show This Again<br /><small style="font-family:'Lucida Console', Courier, monospace;color:red;">By Selecting This (&#8593;), You Consent To My Use Of Cookies</small></label>
+                <br /><br />
                 <input type="button" id="FrogDone" onclick="RemoveFrog();" value="Proceed" />
             </div>
         </div>
         
         <div class="FDBox Gone" id="BadBrowser">    
-            <img onclick="document.getElementById('BadBrowser').style.display = 'none';FadeIn();" alt="Close" src="Images/exit-closed-symbol-hi.png" class="CloseButton" />
+            <img onclick="document.getElementById('BadBrowser').style.display = 'none';DetermineCookie();" alt="Close" src="Images/exit-closed-symbol-hi.png" class="CloseButton" />
             
             <div class="FDMsg">
                 
@@ -76,10 +78,12 @@
                     <img title="Safari" src="Images/safari-logo.png" alt="Safari" class="FDImg" /> <span id="TrollMac">(at least, not on PC)</span>
                 </p>
                 <br />
-                <input class="FDButton" type="button" value="Proceed At Your Own Risk" onclick="document.getElementById('BadBrowser').style.display = 'none';FadeIn();" />
+                <input class="FDButton" type="button" value="Proceed At Your Own Risk" onclick="document.getElementById('BadBrowser').style.display = 'none';DetermineCookie();" />
             </div>
         </div>
         
+        
+        <div class="Gone" id="Cover"></div>
         
         
 		<nav class="Global">

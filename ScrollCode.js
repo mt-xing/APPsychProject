@@ -107,8 +107,16 @@ function supports_details() {
 
 
 
+
+
+
+
+
 function Startup(){
+    var CookieValue = readCookie("XingVisit");
+    
     document.body.scrollTop = document.documentElement.scrollTop = 0;
+    document.getElementById("Cover").style.display = "initial";
     
     smoothScroll.init({
         speed: 1000, // Integer. How fast to complete the scroll in milliseconds
@@ -126,20 +134,24 @@ function Startup(){
     if(supports_details() == false){
         document.getElementById("BadBrowser").style.display = "block";
     } else{
-        setTimeout(function(){FadeIn()}, 1000);
+        DetermineCookie();
     }
-    
-    
-    var CookieValue = readCookie("XingVisit");
-	if(CookieValue == 1){
-		RemoveFrog();
-	}
+}
+
+
+function DetermineCookie(){
+    if(CookieValue == 1){
+        RemoveFrog();
+    }
 }
 
 
 
-
 function FadeIn(){
+    document.getElementById("Cover").style.opacity = 0;
+    setTimeout(function(){FadeInRest()}, 3000);
+}
+function FadeInRest(){
     var Title = document.getElementById("MainTitle");
     Title.style.fontSize = "600%";
     setTimeout(function(){FadeIn2()}, 1000);
@@ -167,6 +179,7 @@ function RemoveFrog(){
         createCookie("XingVisit", 1, 30);
     }
     
+    FadeIn();
     document.getElementById("FrogWarn").style.display = "none";
 }
 
