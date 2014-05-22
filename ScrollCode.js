@@ -1,3 +1,5 @@
+var TimeMult = 1000;
+
 function getScrollingPosition(){      
     //Code Stolen From: http://www.sitepoint.com/javascript-from-scratch/6/
   var position = [0, 0];      
@@ -93,7 +95,7 @@ function FixScroll(){
 
 function ShowLink(CredName){
     document.getElementById(CredName).style.background = "yellow";
-    setTimeout(function(){document.getElementById(CredName).style.background = null}, 3000);
+    setTimeout(function(){document.getElementById(CredName).style.background = null}, 3*TimeMult);
 }
 
 
@@ -153,6 +155,8 @@ function DetermineCookie(){
             Vids[i].style.transition = "initial";
         }
         
+        TimeMult = 0;
+        
         RemoveFrog();
         
     }
@@ -162,12 +166,12 @@ function DetermineCookie(){
 
 function FadeIn(){
     document.getElementById("Cover").style.opacity = 0;
-    setTimeout(function(){FadeInRest()}, 3000);
+    setTimeout(function(){FadeInRest()}, 3*TimeMult);
 }
 function FadeInRest(){
     var Title = document.getElementById("MainTitle");
     Title.style.fontSize = "600%";
-    setTimeout(function(){FadeIn2()}, 1000);
+    setTimeout(function(){FadeIn2()}, TimeMult);
 }
 function FadeIn2(){
     var Paras = document.getElementsByTagName("p");
@@ -179,7 +183,7 @@ function FadeIn2(){
         Vids[i].style.opacity = 1;
     }
     
-    setTimeout(function(){FadeIn3()}, 1000);
+    setTimeout(function(){FadeIn3()}, TimeMult);
 }
 function FadeIn3(){
     document.getElementsByTagName("body")[0].style.height = "initial";
