@@ -482,9 +482,25 @@ input[type="radio"]:checked:hover + label {
 
 
 
+#FrogClose{
+    left:25%;
+    left:calc(25% - 25px);
+}
 
-#FrogWarn{
+.FrogMsg{
+    border-radius:50px;
+    background:rgb(235, 235, 235);
+    color:black;
+    width:50%;
+}
+
+.FrogCloseButton{
+    background:black;
     color:white;
+    height:50px;
+    width:200px;
+    border-radius:20px;
+    font-size:150%;
 }
 
 /*

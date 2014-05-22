@@ -35,8 +35,8 @@
         </header>
         
         <div class="FDBox" id="FrogWarn">
-            <img onclick="RemoveFrog();" alt="Close" src="Images/exit-closed-symbol-hi.png" class="CloseButton" />
-            <div class="FDMsg">
+            <img onclick="RemoveFrog();" id="FrogClose" alt="Close" src="Images/exit-closed-symbol-hi.png" class="CloseButton" />
+            <div class="FDMsg FrogMsg">
                 <br />
                 <h1>Warning</h1>
                 <p>This website contains pictures of frogs.</p>
@@ -48,7 +48,7 @@
                 <input type="checkbox" id="FrogNoShow" checked>
                 <label for="FrogNoShow">Do Not Show This Again<br /><small style="font-family:'Lucida Console', Courier, monospace;color:red;">By Selecting This (&#8593;), You Consent To My Use Of Cookies</small></label>
                 <br /><br />
-                <input type="button" id="FrogDone" onclick="RemoveFrog();" value="Proceed" />
+                <input type="button" class="FrogCloseButton" id="FrogDone" onclick="RemoveFrog();" value="Proceed" />
             </div>
         </div>
         
