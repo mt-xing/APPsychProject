@@ -188,6 +188,7 @@ function FadeIn2(){
 function FadeIn3(){
     document.getElementsByTagName("body")[0].style.height = "initial";
     document.getElementsByTagName("body")[0].style.overflow = "initial";
+    document.getElementById("Cover").style.display = "none";
 }
 
 function RemoveFrog(){
