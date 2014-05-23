@@ -631,13 +631,22 @@ li{
 .Pic200{
     max-height:200px;
     max-width:200px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
 .Pic300{
     max-height:300px;
     max-width:300px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
 #RunningPic{
     max-height:100px;
+}
+.InPic{
+    display:inline !important;
 }
 
 .Compare{
